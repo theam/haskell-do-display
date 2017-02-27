@@ -1,0 +1,33 @@
+name:                haskell-do-display
+version:             0.1.0
+synopsis:            Display classes for HaskellDO
+description:         See README
+homepage:            https://github.com/theam/haskell-do-display#readme
+license:             Apache-2.0
+license-file:        LICENSE
+author:              HaskellDO contributors
+maintainer:          hello@theam.io
+copyright:           2017 HaskellDO contributors
+category:            Editor
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     HaskellDO.Display
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+
+test-suite test-suite
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , haskell-do-display
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/theam/haskell-do-display
