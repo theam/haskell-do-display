@@ -15,8 +15,21 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     HaskellDO.Display
+  exposed-modules:     Display
   build-depends:       base >= 4.7 && < 5
+                     , Frames
+                     , Chart
+                     , Chart-diagrams
+                     , vinyl
+                     , blaze-html
+                     , blaze-markup
+                     , data-default-class 
+                     , directory 
+                     , text 
+                     , aeson
+                     , filepath
+  other-modules:       DisplayTypes
+                     , Displayable
   default-language:    Haskell2010
 
 test-suite test-suite
