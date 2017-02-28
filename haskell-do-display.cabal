@@ -30,6 +30,8 @@ library
                      , filepath
   other-modules:       DisplayTypes
                      , Displayable
+                     , DisplayCharts
+                     , DisplayFrames
   default-language:    Haskell2010
 
 test-suite test-suite

@@ -14,12 +14,12 @@ class Displayable a where
 
 -- |
 -- DisplayType contains the allowed media to render 
--- Any extensions to this library (i.e custom Display instances) should add a type here 
--- E.g adding a display for latex would add the type DisplayLatex here
 data DisplayType
   = DisplayText
   | DisplayHtml
-  | DisplayChart 
+  | DisplaySVG
+  | DisplayJS
+  | DisplayImage 
   deriving Generic
 
 -- |
