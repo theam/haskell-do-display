@@ -24,6 +24,6 @@ tmpDir = createDirectoryIfMissing False ".tmpImages"
 storeChart :: Renderable a -> IO FilePath 
 storeChart c = do 
   tmpDir 
-  let filename = ".haskll-do-chart.svg"
+  let filename = ".haskell-do-chart.svg"
   renderableToFile def filename c
   return $ ".tmpImages" ++ [pathSeparator] ++ filename
