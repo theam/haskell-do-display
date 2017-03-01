@@ -21,6 +21,7 @@ data DisplayType
   | DisplaySVG
   | DisplayJS
   | DisplayImage 
+  | DisplayList
   deriving Generic
 
 -- |
