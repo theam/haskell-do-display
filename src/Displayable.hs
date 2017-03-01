@@ -23,8 +23,8 @@ instance Displayable Char where
 instance Displayable T.Text where 
   display t = Display DisplayText (T.unpack t)
 
-instance (Show a) => Displayable [a] where 
-  display lst = Display DisplayText (show lst)
+instance (Displayable a) => Displayable [a] where 
+  display lst = Display DisplayList (show $ fmap display lst)
 
 instance (Show a) => Displayable (Maybe a) where 
   display m = Display DisplayText (show m)
