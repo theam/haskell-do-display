@@ -7,7 +7,7 @@ import Displayable
 import Frames
 import Data.Vinyl.TypeLevel (RecAll)
 import Text.Blaze.Html5 (toHtml, td, tr)
-import Text.Blaze.Html.Renderer.Text (renderHtml)
+import Text.Blaze.Html.Renderer.Pretty (renderHtml)
 import Data.Text.Lazy (toChunks)
 import qualified Data.Vinyl.Functor as V
 import qualified Data.Text as T
