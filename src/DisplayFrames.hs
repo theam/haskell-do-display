@@ -2,6 +2,7 @@
 
 module DisplayFrames where 
 
+import Control.Monad (mapM_)
 import DisplayTypes
 import Displayable
 import Frames
